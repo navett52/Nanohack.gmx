@@ -7,18 +7,6 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_Esd</sprite>
-    <sprite>sprites\spr_Player</sprite>
-  </sprites>
-  <backgrounds name="background"/>
-  <paths name="paths"/>
-  <objects name="objects">
-    <objects name="projectiles">
-      <object>objects\obj_Esd</object>
-    </objects>
-    <objects name="player">
-      <object>objects\obj_Player</object>
-    </objects>
-    <objects name="level">
     <sprites name="Player">
       <sprite>sprites\spr_Player</sprite>
     </sprites>
@@ -37,12 +25,15 @@
     </scripts>
   </scripts>
   <objects name="objects">
+    <objects name="Level">
+      <object>objects\obj_Solid</object>
+    </objects>
+    <objects name="projectiles">
+      <object>objects\obj_Esd</object>
+    </objects>
     <objects name="Player">
       <object>objects\obj_Player</object>
       <object>objects\obj_StatusBars</object>
-    </objects>
-    <objects name="Level">
-      <object>objects\obj_Solid</object>
     </objects>
   </objects>
   <rooms name="rooms">
