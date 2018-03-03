@@ -5,9 +5,35 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprites name="Player">
+      <sprite>sprites\spr_Player</sprite>
+    </sprites>
+    <sprites name="Level">
+      <sprite>sprites\spr_Solid</sprite>
+    </sprites>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <scripts name="player">
+      <script>scripts\player_move_state.gml</script>
+    </scripts>
+    <scripts name="helper">
+      <script>scripts\move.gml</script>
+    </scripts>
+  </scripts>
+  <objects name="objects">
+    <objects name="Player">
+      <object>objects\obj_Player</object>
+    </objects>
+    <objects name="Level">
+      <object>objects\obj_Solid</object>
+    </objects>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_TestConnor</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
