@@ -33,6 +33,7 @@ playerHealthMin = 0;
 playerEnergyMin = 0;
 playerHealth = 10;
 playerEnergy = 100;
+civCount = 0;
 
 </string>
           </argument>

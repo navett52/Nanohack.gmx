@@ -7,16 +7,21 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_Snack</sprite>
+    <sprite>sprites\spr_Civ</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\fnt_CivCount</font>
+  </fonts>
   <objects name="objects">
     <objects name="Player">
       <object>objects\obj_PlayerStats</object>
       <object>objects\obj_StatusBars</object>
     </objects>
-    <objects name="Snacks">
+    <objects name="Collectables">
       <object>objects\obj_Snack</object>
+      <object>objects\obj_Civ</object>
     </objects>
   </objects>
   <rooms name="rooms">
