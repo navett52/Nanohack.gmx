@@ -33,6 +33,11 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_TestConnor</room>
+  <objects name="objects">
+    <object>objects\obj_StatusBars</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_RoomJake</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
