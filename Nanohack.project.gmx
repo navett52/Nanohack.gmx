@@ -17,6 +17,7 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\create_text.gml</script>
     <scripts name="player">
       <script>scripts\player_move_state.gml</script>
     </scripts>
@@ -24,7 +25,11 @@
       <script>scripts\move.gml</script>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_TextBox</font>
+  </fonts>
   <objects name="objects">
+    <object>objects\obj_textBox</object>
     <objects name="Level">
       <object>objects\obj_Solid</object>
     </objects>
@@ -37,6 +42,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_RoomEvan</room>
     <room>rooms\Justin_Dev_Room</room>
     <room>rooms\rm_TestConnor</room>
     <room>rooms\rm_RoomJake</room>
