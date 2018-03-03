@@ -5,9 +5,26 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_Esd</sprite>
+    <sprite>sprites\spr_Player</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <objects name="projectiles">
+      <object>objects\obj_Esd</object>
+    </objects>
+    <objects name="player">
+      <object>objects\obj_Player</object>
+    </objects>
+    <objects name="level">
+      <object>objects\obj_Solid</object>
+    </objects>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\Justin_Dev_Room</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
