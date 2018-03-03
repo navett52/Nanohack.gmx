@@ -8,6 +8,18 @@
   <sprites name="sprites"/>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\create_text.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_TextBox</font>
+  </fonts>
+  <objects name="objects">
+    <object>objects\obj_textBox</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_RoomEvan</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
