@@ -27,18 +27,17 @@
             <kind>1</kind>
             <string>/// Draw event for the Status Bars object
 
-var pc; // Temp till char is made
-pc = (50 / 100) * 100; // Temp till char is made
+var playerHealth; // Temp till char is made
+playerHealth = (50 / 100) * 100; // Temp till char is made
 
-draw_healthbar(view_xview[0] + 20, view_yview[0] + 20,view_xview[0] + 500,view_yview[0] + 60, pc, c_gray, c_green, c_green, 0, true, true);
+draw_healthbar(view_xview[0] + 20, view_yview[0] + 20,view_xview[0] + 500,view_yview[0] + 60, playerHealth, c_gray, c_green, c_green, 0, true, true);
 
 
-var ge; // Temp till char is made
-ge = (70 / 100) * 100; // Temp till char is made
+var gunEnergy; // Temp till char is made
+gunEnergy = (70 / 100) * 100; // Temp till char is made
 
-draw_healthbar(view_xview[0] + 20,view_yview[0] + 67,view_xview[0] + 500,view_yview[0] + 60, ge, c_dkgray, c_blue, c_blue, 0, true, true);
+draw_healthbar(view_xview[0] + 20,view_yview[0] + 67,view_xview[0] + 500,view_yview[0] + 60, gunEnergy, c_dkgray, c_blue, c_blue, 0, true, true);
 
-//view_xview[0] + 32, view_yview[0] + 32
 </string>
           </argument>
         </arguments>
