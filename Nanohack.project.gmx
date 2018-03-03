@@ -6,25 +6,8 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-<<<<<<< HEAD
     <sprite>sprites\spr_Snack</sprite>
     <sprite>sprites\spr_Civ</sprite>
-  </sprites>
-  <backgrounds name="background"/>
-  <paths name="paths"/>
-  <fonts name="fonts">
-    <font>fonts\fnt_CivCount</font>
-  </fonts>
-  <objects name="objects">
-    <objects name="Player">
-      <object>objects\obj_PlayerStats</object>
-      <object>objects\obj_StatusBars</object>
-    </objects>
-    <objects name="Collectables">
-      <object>objects\obj_Snack</object>
-      <object>objects\obj_Civ</object>
-    </objects>
-=======
     <sprite>sprites\spr_Esd</sprite>
     <sprites name="Player">
       <sprite>sprites\spr_Player</sprite>
@@ -46,6 +29,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_TextBox</font>
+    <font>fonts\fnt_CivCount</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_textBox</object>
@@ -59,12 +43,19 @@
       <object>objects\obj_Player</object>
       <object>objects\obj_StatusBars</object>
     </objects>
->>>>>>> Dev
+    <objects name="Player">
+      <object>objects\obj_PlayerStats</object>
+      <object>objects\obj_StatusBars</object>
+    </objects>
+    <objects name="Collectables">
+      <object>objects\obj_Snack</object>
+      <object>objects\obj_Civ</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_RoomEvan</room>
-    <room>rooms\Justin_Dev_Room</room>
     <room>rooms\rm_TestConnor</room>
+    <room>rooms\Justin_Dev_Room</room>
+    <room>rooms\rm_RoomEvan</room>
     <room>rooms\rm_RoomJake</room>
   </rooms>
   <help>
