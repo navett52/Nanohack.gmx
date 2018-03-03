@@ -5,9 +5,59 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_Snack</sprite>
+    <sprite>sprites\spr_Civ</sprite>
+    <sprite>sprites\spr_Esd</sprite>
+    <sprites name="Player">
+      <sprite>sprites\spr_Player</sprite>
+    </sprites>
+    <sprites name="Level">
+      <sprite>sprites\spr_Solid</sprite>
+    </sprites>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\create_text.gml</script>
+    <scripts name="player">
+      <script>scripts\player_move_state.gml</script>
+    </scripts>
+    <scripts name="helper">
+      <script>scripts\move.gml</script>
+    </scripts>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_TextBox</font>
+    <font>fonts\fnt_CivCount</font>
+  </fonts>
+  <objects name="objects">
+    <object>objects\obj_textBox</object>
+    <objects name="Level">
+      <object>objects\obj_Solid</object>
+    </objects>
+    <objects name="projectiles">
+      <object>objects\obj_Esd</object>
+    </objects>
+    <objects name="Player">
+      <object>objects\obj_Player</object>
+      <object>objects\obj_StatusBars</object>
+    </objects>
+    <objects name="Player">
+      <object>objects\obj_PlayerStats</object>
+      <object>objects\obj_StatusBars</object>
+    </objects>
+    <objects name="Collectables">
+      <object>objects\obj_Snack</object>
+      <object>objects\obj_Civ</object>
+    </objects>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_TestConnor</room>
+    <room>rooms\Justin_Dev_Room</room>
+    <room>rooms\rm_RoomEvan</room>
+    <room>rooms\rm_RoomJake</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
