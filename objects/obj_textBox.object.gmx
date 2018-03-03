@@ -53,7 +53,7 @@ depth = depth - instance_number(obj_textBox);
           <argument>
             <kind>1</kind>
             <string>///Add letters over time
-if (time &lt; text_length)
+if (time &lt;= text_length)
 {
     time += spd;
     print = string_copy(text, 0, time);
