@@ -26,6 +26,7 @@
   <objects name="objects">
     <objects name="Player">
       <object>objects\obj_Player</object>
+      <object>objects\obj_StatusBars</object>
     </objects>
     <objects name="Level">
       <object>objects\obj_Solid</object>
@@ -33,10 +34,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_TestConnor</room>
-  <objects name="objects">
-    <object>objects\obj_StatusBars</object>
-  </objects>
-  <rooms name="rooms">
     <room>rooms\rm_RoomJake</room>
   </rooms>
   <help>
