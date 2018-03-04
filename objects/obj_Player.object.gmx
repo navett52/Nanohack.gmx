@@ -57,6 +57,14 @@ state = player_move_state;
             <string>///execute state
 
 script_execute(state);
+
+if(audio_is_playing(snd_Buzz))
+{
+    if(distance_to_object(obj_nanoBots) &gt;= 400)
+    {
+        audio_stop_sound(snd_Buzz);
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -85,6 +93,7 @@ if (sprite_index != spr_PlayerHurt)
     sprite_index = spr_PlayerHurt;
     image_speed = .165;
     obj_PlayerStats.playerHealth -= 10;
+    audio_play_sound(snd_Hurt, 5, false);
     if (target_right(other))
     {
         hspd = -30;
@@ -129,6 +138,9 @@ if (sprite_index != spr_PlayerHurt)
             <kind>1</kind>
             <string>/// Fire Projectile
 attach_object(obj_Esd);
+
+audio_sound_gain(audio_play_sound(snd_Zap, 5, false), 0.7, 0);
+    ;
 </string>
           </argument>
         </arguments>
