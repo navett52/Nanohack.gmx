@@ -107,6 +107,10 @@ image_yscale -= .008;
             <string>///Damage the player when they get touched by nanobots
 if (sprite_index != spr_PlayerHurt)
 {
+    if (obj_PlayerStats.playerHealth == obj_PlayerStats.playerHealthMin)
+    {
+        room_goto(rm_gameOver);
+    }
     sprite_index = spr_PlayerHurt;
     image_speed = .165;
     obj_PlayerStats.playerHealth -= 10;
