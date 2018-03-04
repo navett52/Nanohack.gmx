@@ -32,4 +32,4 @@ else
     hspd = 0;
 }
 
-move(obj_Solid);
+move(obj_Solid, obj_Desk);
