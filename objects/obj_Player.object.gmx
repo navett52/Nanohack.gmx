@@ -102,7 +102,7 @@ if (sprite_index != spr_PlayerHurt)
     {
         vspd = 30;
     }
-    move(obj_Solid);
+    move(obj_Solid, obj_Desk);
 }
 
 </string>
@@ -128,7 +128,18 @@ if (sprite_index != spr_PlayerHurt)
           <argument>
             <kind>1</kind>
             <string>/// Fire Projectile
-attach_object(obj_Esd);
+
+if (obj_PlayerStats.playerEnergy &gt;= 50) {
+    with (instance_create(x,y, obj_Esd)) {
+    image_angle = other.direction;
+    attached = other.id;
+    offsetDir = x - other.x;
+    offsetDist = y - other.y;
+    initialAngle = 0;
+    obj_PlayerStats.playerEnergy -= energyCost;
+    }
+}
+
 </string>
           </argument>
         </arguments>
