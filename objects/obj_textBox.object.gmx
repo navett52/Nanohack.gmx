@@ -55,7 +55,7 @@ instance_deactivate_all(true);
           <argument>
             <kind>1</kind>
             <string>///On click make the text box go away
-if (mouse_check_button_pressed(mb_left))
+if (keyboard_check(ord("W")) || keyboard_check(ord("D")) || keyboard_check(ord("S")) || keyboard_check(ord("A")))
 {
     instance_destroy();
     instance_activate_all();
