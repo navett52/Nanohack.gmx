@@ -24,7 +24,14 @@
       <sprite>sprites\spr_ESDGun</sprite>
     </sprites>
     <sprites name="Level">
+      <sprite>sprites\spr_Vent</sprite>
       <sprite>sprites\spr_Solid</sprite>
+      <sprite>sprites\spr_Chair</sprite>
+      <sprite>sprites\spr_Snack</sprite>
+      <sprite>sprites\spr_Table</sprite>
+      <sprite>sprites\spr_Civ</sprite>
+      <sprite>sprites\spr_Floor</sprite>
+      <sprite>sprites\spr_Project</sprite>
       <sprites name="Walls">
         <sprite>sprites\spr_WallTNeg</sprite>
         <sprite>sprites\spr_WallTRight</sprite>
@@ -45,21 +52,13 @@
         <sprite>sprites\spr_GlassNormal</sprite>
         <sprite>sprites\spr_GlassSide</sprite>
       </sprites>
-      <sprite>sprites\spr_Table</sprite>
-      <sprite>sprites\spr_Chair</sprite>
-      <sprite>sprites\spr_Snack</sprite>
-      <sprite>sprites\spr_Civ</sprite>
-      <sprite>sprites\spr_Floor</sprite>
-      <sprite>sprites\spr_Project</sprite>
+      <sprite>sprites\spr_CivCounter</sprite>
+      <sprite>sprites\spr_Floor2</sprite>
     </sprites>
     <sprite>sprites\spr_nanoBots</sprite>
     <sprites name="Projectiles">
       <sprite>sprites\spr_Esd</sprite>
     </sprites>
-    <sprite>sprites\spr_temp_Vent</sprite>
-    <sprite>sprites\spr_temp_Wires</sprite>
-    <sprite>sprites\spr_Temp_Desk</sprite>
-    <sprite>sprites\spr_Chair_Temp</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -118,6 +117,7 @@
         <object>objects\obj_GlassNormal</object>
         <object>objects\obj_GlassSide</object>
       </objects>
+      <object>objects\obj_Floor2</object>
       <objects name="Special Projects">
         <object>objects\obj_VArgh</object>
         <object>objects\obj_Watrr</object>
