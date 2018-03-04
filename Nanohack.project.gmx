@@ -6,21 +6,15 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-<<<<<<< HEAD
     <sprite>sprites\spr_Snack</sprite>
     <sprite>sprites\spr_Civ</sprite>
-    <sprite>sprites\spr_Esd</sprite>
-=======
->>>>>>> Dev
     <sprites name="Player">
       <sprite>sprites\spr_Player</sprite>
     </sprites>
     <sprites name="Level">
       <sprite>sprites\spr_Solid</sprite>
     </sprites>
-<<<<<<< HEAD
     <sprite>sprites\spr_Floor</sprite>
-=======
     <sprite>sprites\spr_nanoBots</sprite>
     <sprites name="jm_enemy">
       <sprite>sprites\jm_enemy</sprite>
@@ -28,7 +22,6 @@
     <sprites name="Projectiles">
       <sprite>sprites\spr_Esd</sprite>
     </sprites>
->>>>>>> Dev
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -61,19 +54,12 @@
     <objects name="Player">
       <object>objects\obj_Player</object>
       <object>objects\obj_StatusBars</object>
-    </objects>
-<<<<<<< HEAD
-    <objects name="Player">
       <object>objects\obj_PlayerStats</object>
-      <object>objects\obj_StatusBars</object>
     </objects>
     <objects name="Collectables">
       <object>objects\obj_Snack</object>
       <object>objects\obj_Civ</object>
     </objects>
-  </objects>
-  <rooms name="rooms">
-=======
     <object>objects\obj_nanoBots</object>
     <objects name="jm_enemy">
       <object>objects\obj_jm_enemy</object>
@@ -83,11 +69,7 @@
     <room>rooms\Justin_Dev_Room</room>
     <room>rooms\rm_RoomEvan</room>
     <room>rooms\rm_TestConnor</room>
->>>>>>> Dev
     <room>rooms\rm_RoomJake</room>
-    <room>rooms\rm_TestConnor</room>
-    <room>rooms\Justin_Dev_Room</room>
-    <room>rooms\rm_RoomEvan</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
