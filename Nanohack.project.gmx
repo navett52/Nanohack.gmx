@@ -12,6 +12,7 @@
     <sprites name="Level">
       <sprite>sprites\spr_Solid</sprite>
     </sprites>
+    <sprite>sprites\spr_nanoBots</sprite>
     <sprites name="jm_enemy">
       <sprite>sprites\jm_enemy</sprite>
     </sprites>
@@ -30,6 +31,9 @@
       <script>scripts\move.gml</script>
       <script>scripts\attach_object.gml</script>
     </scripts>
+    <scripts name="nanobots">
+      <script>scripts\roam_state.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_TextBox</font>
@@ -46,6 +50,7 @@
       <object>objects\obj_Player</object>
       <object>objects\obj_StatusBars</object>
     </objects>
+    <object>objects\obj_nanoBots</object>
     <objects name="jm_enemy">
       <object>objects\obj_jm_enemy</object>
     </objects>
