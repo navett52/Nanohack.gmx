@@ -53,9 +53,6 @@
       <sprite>sprites\spr_Project</sprite>
     </sprites>
     <sprite>sprites\spr_nanoBots</sprite>
-    <sprites name="jm_enemy">
-      <sprite>sprites\jm_enemy</sprite>
-    </sprites>
     <sprites name="Projectiles">
       <sprite>sprites\spr_Esd</sprite>
     </sprites>
@@ -151,13 +148,10 @@
       <object>objects\obj_ESDGun</object>
     </objects>
     <object>objects\obj_nanoBots</object>
-    <objects name="jm_enemy">
-      <object>objects\obj_jm_enemy</object>
-    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_RoomEvan</room>
     <room>rooms\rm_8th_floor</room>
+    <room>rooms\rm_RoomEvan</room>
     <room>rooms\rm_RoomJake</room>
     <room>rooms\Justin_Dev_Room</room>
     <room>rooms\rm_TestConnor</room>
