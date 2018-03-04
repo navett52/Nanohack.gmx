@@ -16,35 +16,37 @@
     </sounds>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_Snack</sprite>
-    <sprite>sprites\spr_Civ</sprite>
     <sprites name="Player">
       <sprite>sprites\spr_Player</sprite>
+      <sprite>sprites\spr_PlayerHurt</sprite>
     </sprites>
     <sprites name="Level">
       <sprite>sprites\spr_Solid</sprite>
-      <sprites name="Walls">
-        <sprite>sprites\spr_WallTNeg</sprite>
-        <sprite>sprites\spr_WallTRight</sprite>
-        <sprite>sprites\spr_WallCornerTopLeft</sprite>
-        <sprite>sprites\spr_WallCornerBottomLeft</sprite>
-        <sprite>sprites\spr_WallCornerBottomRight</sprite>
-        <sprite>sprites\spr_WallCornerTopRight</sprite>
-        <sprite>sprites\spr_WallEndBottom</sprite>
-        <sprite>sprites\spr_WallEndLeft</sprite>
-        <sprite>sprites\spr_WallEndRight</sprite>
-        <sprite>sprites\spr_WallEndTop</sprite>
-        <sprite>sprites\spr_WallNormal</sprite>
-        <sprite>sprites\spr_WallPillar</sprite>
-        <sprite>sprites\spr_WallPlus</sprite>
-        <sprite>sprites\spr_WallSide</sprite>
-        <sprite>sprites\spr_WallT</sprite>
-        <sprite>sprites\spr_WallTLeft</sprite>
-        <sprite>sprites\spr_GlassNormal</sprite>
-        <sprite>sprites\spr_GlassSide</sprite>
-      </sprites>
+      <sprite>sprites\spr_Snack</sprite>
+      <sprite>sprites\spr_Civ</sprite>
+      <sprite>sprites\spr_Floor</sprite>
+      <sprite>sprites\spr_Project</sprite>
     </sprites>
-    <sprite>sprites\spr_Floor</sprite>
+    <sprites name="Walls">
+      <sprite>sprites\spr_WallTNeg</sprite>
+      <sprite>sprites\spr_WallTRight</sprite>
+      <sprite>sprites\spr_WallCornerTopLeft</sprite>
+      <sprite>sprites\spr_WallCornerBottomLeft</sprite>
+      <sprite>sprites\spr_WallCornerBottomRight</sprite>
+      <sprite>sprites\spr_WallCornerTopRight</sprite>
+      <sprite>sprites\spr_WallEndBottom</sprite>
+      <sprite>sprites\spr_WallEndLeft</sprite>
+      <sprite>sprites\spr_WallEndRight</sprite>
+      <sprite>sprites\spr_WallEndTop</sprite>
+      <sprite>sprites\spr_WallNormal</sprite>
+      <sprite>sprites\spr_WallPillar</sprite>
+      <sprite>sprites\spr_WallPlus</sprite>
+      <sprite>sprites\spr_WallSide</sprite>
+      <sprite>sprites\spr_WallT</sprite>
+      <sprite>sprites\spr_WallTLeft</sprite>
+      <sprite>sprites\spr_GlassNormal</sprite>
+      <sprite>sprites\spr_GlassSide</sprite>
+    </sprites>
     <sprite>sprites\spr_nanoBots</sprite>
     <sprites name="jm_enemy">
       <sprite>sprites\jm_enemy</sprite>
@@ -64,9 +66,13 @@
     <scripts name="helper">
       <script>scripts\move.gml</script>
       <script>scripts\attach_object.gml</script>
+      <script>scripts\target_right.gml</script>
+      <script>scripts\target_above.gml</script>
     </scripts>
     <scripts name="nanobots">
       <script>scripts\roam_state.gml</script>
+      <script>scripts\chase_state.gml</script>
+      <script>scripts\replicate_state.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -77,11 +83,12 @@
     <objects name="Projectiles">
       <object>objects\obj_Esd</object>
     </objects>
-    <object>objects\obj_textBox</object>
     <objects name="Level">
       <object>objects\obj_Solid</object>
       <object>objects\obj_Wall</object>
       <object>objects\obj_Floor</object>
+      <object>objects\obj_textBox</object>
+      <object>objects\obj_Project</object>
       <objects name="Walls">
         <object>objects\obj_WallTNeg</object>
         <object>objects\obj_WallTRight</object>
@@ -118,8 +125,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_RoomJake</room>
     <room>rooms\rm_RoomEvan</room>
+    <room>rooms\rm_RoomJake</room>
     <room>rooms\rm_6th_floor</room>
     <room>rooms\Justin_Dev_Room</room>
     <room>rooms\rm_TestConnor</room>
