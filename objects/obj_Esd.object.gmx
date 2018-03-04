@@ -58,8 +58,8 @@ speed = 0;
 
 // ensures the Electric Static Discharge stays with the object it is attached to.
 if (instance_exists(attached)) {
-    x = attached.x + lengthdir_x(offsetDist + 32, offsetDir + attached.image_angle);
-    y = attached.y + lengthdir_y(offsetDist + 32, offsetDir + attached.image_angle);
+    x = attached.x + lengthdir_x(offsetDist + 50, offsetDir + attached.image_angle);
+    y = attached.y + lengthdir_y(offsetDist + 50, offsetDir + attached.image_angle);
     image_angle = offsetDir + attached.image_angle + initialAngle;
 }
 
