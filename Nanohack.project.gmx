@@ -15,6 +15,7 @@
     <sprites name="Level">
       <sprite>sprites\spr_Solid</sprite>
     </sprites>
+    <sprite>sprites\spr_Floor</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -35,6 +36,7 @@
     <object>objects\obj_textBox</object>
     <objects name="Level">
       <object>objects\obj_Solid</object>
+      <object>objects\obj_Floor</object>
     </objects>
     <objects name="projectiles">
       <object>objects\obj_Esd</object>
@@ -53,10 +55,10 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_RoomJake</room>
     <room>rooms\rm_TestConnor</room>
     <room>rooms\Justin_Dev_Room</room>
     <room>rooms\rm_RoomEvan</room>
-    <room>rooms\rm_RoomJake</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
