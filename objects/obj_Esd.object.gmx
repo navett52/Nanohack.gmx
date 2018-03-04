@@ -64,7 +64,7 @@ if (instance_exists(attached)) {
 
 // Initialize variables for keeping track of all objects that collide with the esd, then delete them later
 var collisionObjects = 0, n = 0;
-with (obj_jm_enemy) {
+with (obj_nanoBots) {
     // do a collision check for each enemy and save its id in the array.
     if (instance_place(x, y, other.id)) {
         collisionObjects[n++] = id;
@@ -73,6 +73,8 @@ with (obj_jm_enemy) {
 // delete any objects that collided with the esd
 for (var i = 0; i &lt; array_length_1d(collisionObjects); i++) {
     instance_destroy(collisionObjects[i]);
+    audio_stop_sound(snd_Buzz);
+    audio_play_sound(snd_Dead, 5, false);
 }
 
 

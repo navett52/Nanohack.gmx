@@ -13,39 +13,44 @@
       <sound>sound\snd_Zap</sound>
       <sound>sound\snd_Footstep</sound>
       <sound>sound\snd_Hurt</sound>
+      <sound>sound\snd_Buzz</sound>
+      <sound>sound\snd_Dead</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Player">
       <sprite>sprites\spr_Player</sprite>
       <sprite>sprites\spr_PlayerHurt</sprite>
+      <sprite>sprites\spr_ESDGun</sprite>
     </sprites>
     <sprites name="Level">
       <sprite>sprites\spr_Solid</sprite>
+      <sprites name="Walls">
+        <sprite>sprites\spr_WallTNeg</sprite>
+        <sprite>sprites\spr_WallTRight</sprite>
+        <sprite>sprites\spr_WallCornerTopLeft</sprite>
+        <sprite>sprites\spr_WallCornerBottomLeft</sprite>
+        <sprite>sprites\spr_WallCornerBottomRight</sprite>
+        <sprite>sprites\spr_WallCornerTopRight</sprite>
+        <sprite>sprites\spr_WallEndBottom</sprite>
+        <sprite>sprites\spr_WallEndLeft</sprite>
+        <sprite>sprites\spr_WallEndRight</sprite>
+        <sprite>sprites\spr_WallEndTop</sprite>
+        <sprite>sprites\spr_WallNormal</sprite>
+        <sprite>sprites\spr_WallPillar</sprite>
+        <sprite>sprites\spr_WallPlus</sprite>
+        <sprite>sprites\spr_WallSide</sprite>
+        <sprite>sprites\spr_WallT</sprite>
+        <sprite>sprites\spr_WallTLeft</sprite>
+        <sprite>sprites\spr_GlassNormal</sprite>
+        <sprite>sprites\spr_GlassSide</sprite>
+      </sprites>
+      <sprite>sprites\spr_Table</sprite>
+      <sprite>sprites\spr_Chair</sprite>
       <sprite>sprites\spr_Snack</sprite>
       <sprite>sprites\spr_Civ</sprite>
       <sprite>sprites\spr_Floor</sprite>
       <sprite>sprites\spr_Project</sprite>
-    </sprites>
-    <sprites name="Walls">
-      <sprite>sprites\spr_WallTNeg</sprite>
-      <sprite>sprites\spr_WallTRight</sprite>
-      <sprite>sprites\spr_WallCornerTopLeft</sprite>
-      <sprite>sprites\spr_WallCornerBottomLeft</sprite>
-      <sprite>sprites\spr_WallCornerBottomRight</sprite>
-      <sprite>sprites\spr_WallCornerTopRight</sprite>
-      <sprite>sprites\spr_WallEndBottom</sprite>
-      <sprite>sprites\spr_WallEndLeft</sprite>
-      <sprite>sprites\spr_WallEndRight</sprite>
-      <sprite>sprites\spr_WallEndTop</sprite>
-      <sprite>sprites\spr_WallNormal</sprite>
-      <sprite>sprites\spr_WallPillar</sprite>
-      <sprite>sprites\spr_WallPlus</sprite>
-      <sprite>sprites\spr_WallSide</sprite>
-      <sprite>sprites\spr_WallT</sprite>
-      <sprite>sprites\spr_WallTLeft</sprite>
-      <sprite>sprites\spr_GlassNormal</sprite>
-      <sprite>sprites\spr_GlassSide</sprite>
     </sprites>
     <sprite>sprites\spr_nanoBots</sprite>
     <sprites name="jm_enemy">
@@ -54,7 +59,10 @@
     <sprites name="Projectiles">
       <sprite>sprites\spr_Esd</sprite>
     </sprites>
-    <sprite>sprites\sprite41</sprite>
+    <sprite>sprites\spr_temp_Vent</sprite>
+    <sprite>sprites\spr_temp_Wires</sprite>
+    <sprite>sprites\spr_Temp_Desk</sprite>
+    <sprite>sprites\spr_Chair_Temp</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -87,6 +95,10 @@
       <object>objects\obj_Solid</object>
       <object>objects\obj_Wall</object>
       <object>objects\obj_Floor</object>
+      <object>objects\obj_Vent</object>
+      <object>objects\obj_Wires</object>
+      <object>objects\obj_Desk</object>
+      <object>objects\obj_Chair</object>
       <object>objects\obj_textBox</object>
       <object>objects\obj_Project</object>
       <objects name="Walls">
@@ -136,6 +148,7 @@
     <objects name="Collectables">
       <object>objects\obj_Snack</object>
       <object>objects\obj_Civ</object>
+      <object>objects\obj_ESDGun</object>
     </objects>
     <object>objects\obj_nanoBots</object>
     <objects name="jm_enemy">
@@ -143,9 +156,9 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_8th_floor</room>
     <room>rooms\rm_RoomEvan</room>
     <room>rooms\rm_RoomJake</room>
-    <room>rooms\rm_6th_floor</room>
     <room>rooms\Justin_Dev_Room</room>
     <room>rooms\rm_TestConnor</room>
   </rooms>
