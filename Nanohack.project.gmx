@@ -43,8 +43,10 @@
         <sprite>sprites\spr_GlassNormal</sprite>
         <sprite>sprites\spr_GlassSide</sprite>
       </sprites>
+      <sprite>sprites\spr_Table</sprite>
+      <sprite>sprites\spr_Chair</sprite>
+      <sprite>sprites\spr_Floor</sprite>
     </sprites>
-    <sprite>sprites\spr_Floor</sprite>
     <sprite>sprites\spr_nanoBots</sprite>
     <sprites name="jm_enemy">
       <sprite>sprites\jm_enemy</sprite>
@@ -52,7 +54,6 @@
     <sprites name="Projectiles">
       <sprite>sprites\spr_Esd</sprite>
     </sprites>
-    <sprite>sprites\sprite41</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
