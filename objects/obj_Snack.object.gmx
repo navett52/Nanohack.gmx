@@ -92,7 +92,14 @@ image_yscale -= .01;
             <kind>1</kind>
             <string>/// Heals the player when the snack is picked up.
 
-obj_PlayerStats.playerHealth += 20; // Change to heal the player a different amount.
+if(obj_PlayerStats.playerHealth &lt; obj_PlayerStats.playerHealthMax)
+{
+    obj_PlayerStats.playerHealth += 20; // Change to heal the player a different amount.
+    if(obj_PlayerStats.playerHealth &gt; obj_PlayerStats.playerHealthMax)
+    {
+        obj_PlayerStats.playerHealth = obj_PlayerStats.playerHealthMax;
+    }
+}
 instance_destroy(); // Gets rid of the snack.
 </string>
           </argument>
