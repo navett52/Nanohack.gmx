@@ -6,12 +6,17 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_Esd</sprite>
     <sprites name="Player">
       <sprite>sprites\spr_Player</sprite>
     </sprites>
     <sprites name="Level">
       <sprite>sprites\spr_Solid</sprite>
+    </sprites>
+    <sprites name="jm_enemy">
+      <sprite>sprites\jm_enemy</sprite>
+    </sprites>
+    <sprites name="Projectiles">
+      <sprite>sprites\spr_Esd</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -22,18 +27,22 @@
     </scripts>
     <scripts name="helper">
       <script>scripts\move.gml</script>
+      <script>scripts\attach_object.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
+    <objects name="Projectiles">
+      <object>objects\obj_Esd</object>
+    </objects>
     <objects name="Level">
       <object>objects\obj_Solid</object>
-    </objects>
-    <objects name="projectiles">
-      <object>objects\obj_Esd</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_Player</object>
       <object>objects\obj_StatusBars</object>
+    </objects>
+    <objects name="jm_enemy">
+      <object>objects\obj_jm_enemy</object>
     </objects>
   </objects>
   <rooms name="rooms">
