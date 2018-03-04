@@ -35,14 +35,14 @@ draw_healthbar(view_xview[0] + 20,view_yview[0] + 67,view_xview[0] + 500,view_yv
 
 score = instance_number(obj_Civ);
 
-        // Draw the sapphire count
+        // Draw the Civ count
         draw_set_halign(fa_right);
         draw_set_font(fnt_CivCount);
         var str = "x" + string(score);
         draw_text_colour(view_wview[0] - 30, 22, str, c_black, c_black, c_black, c_black, 1);
         
         var text_Width = string_width(str);
-        draw_sprite(spr_Civ, 0, view_wview[0] - 48 - text_Width, 22); 
+        draw_sprite(spr_CivCounter, 0, view_wview[0] - 48 - text_Width, 22); 
 </string>
           </argument>
         </arguments>
