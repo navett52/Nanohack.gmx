@@ -12,7 +12,7 @@
       <sprite>sprites\spr_Player</sprite>
     </sprites>
     <sprites name="Level">
-      <sprite>sprites\spr_Solid</sprite>
+      <sprite>sprites\spr_temp_solid</sprite>
     </sprites>
     <sprite>sprites\spr_Floor</sprite>
     <sprite>sprites\spr_nanoBots</sprite>
@@ -49,6 +49,7 @@
     <object>objects\obj_textBox</object>
     <objects name="Level">
       <object>objects\obj_Solid</object>
+      <object>objects\obj_Wall</object>
       <object>objects\obj_Floor</object>
     </objects>
     <objects name="Player">
@@ -66,10 +67,11 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Justin_Dev_Room</room>
-    <room>rooms\rm_RoomEvan</room>
-    <room>rooms\rm_TestConnor</room>
     <room>rooms\rm_RoomJake</room>
+    <room>rooms\rm_RoomEvan</room>
+    <room>rooms\rm_6th_floor</room>
+    <room>rooms\Justin_Dev_Room</room>
+    <room>rooms\rm_TestConnor</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
