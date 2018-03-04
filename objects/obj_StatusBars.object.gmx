@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>/// Draw event for the Status Bars object
 
-var pHealth = (obj_PlayerStats.playerHealth/ obj_PlayerStats.playerHealthMax) * 100;
+var pHealth = (obj_PlayerStats.playerHealth / obj_PlayerStats.playerHealthMax) * 100;
 draw_healthbar(view_xview[0] + 20, view_yview[0] + 20,view_xview[0] + 500,view_yview[0] + 60, pHealth, c_gray, c_green, c_green, 0, true, true);
 
 var pEnergy = (obj_PlayerStats.playerEnergy/ obj_PlayerStats.playerEnergyMax) * 100; 

@@ -62,6 +62,54 @@ script_execute(state);
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_nanoBots">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Damage the player when they get touched by nanobots
+if (sprite_index != spr_PlayerHurt)
+{
+    sprite_index = spr_PlayerHurt;
+    image_speed = .165;
+    obj_PlayerStats.playerHealth -= 10;
+    if (target_right(other))
+    {
+        hspd = -30;
+    }
+    else
+    {
+        hspd = 30;
+    }
+    
+    if (target_above(other))
+    {
+        vspd = -30;
+    }
+    else
+    {
+        vspd = 30;
+    }
+    move(obj_Solid);
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="6" enumb="53">
       <action>
         <libid>1</libid>
@@ -81,6 +129,33 @@ script_execute(state);
             <kind>1</kind>
             <string>/// Fire Projectile
 attach_object(obj_Esd);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Get the player out of hurt animation
+if (sprite_index = spr_PlayerHurt)
+{
+    sprite_index = spr_Player;
+}
 </string>
           </argument>
         </arguments>
