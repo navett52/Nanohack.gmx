@@ -29,6 +29,7 @@
 spd = 6;
 hspd = 0;
 vspd = 0;
+grow = true;
 
 state = player_move_state;
 
@@ -63,6 +64,22 @@ if(audio_is_playing(snd_Buzz))
     if(distance_to_object(obj_nanoBots) &gt;= 400)
     {
         audio_stop_sound(snd_Buzz);
+    }
+}
+
+if (grow == true){
+image_xscale += .008;
+image_yscale += .008;
+    if(image_xscale &gt;= 1.1){
+    grow = false;
+    }
+}
+
+if (grow == false){
+image_xscale -= .008;
+image_yscale -= .008;
+    if(image_xscale &lt;= 1){
+    grow = true;
     }
 }
 </string>
