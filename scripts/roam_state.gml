@@ -40,9 +40,28 @@ if (place_meeting(x + hspd, y + vspd, obj_Solid))
     alarm_set(0, 5 * room_speed);
 }
 
+
+
+var dist_to_target = point_distance(x, y, obj_Player.x, obj_Player.y);
+var dist_to_project = 1000000;
+
+if (instance_exists(obj_Project))
+{
+    var project = instance_nearest(x, y, obj_Project);
+    var dist_to_project = point_distance(x, y, project.x, project.y);
+}
+
+if (dist_to_target < range)
+{
+    state = chase_state;
+}
+else if (dist_to_project < range)
+{
+    state = replicate_state;
+}
+
 hspd = 0;
 vspd = 0;
-
 switch (dir)
 {
     case "up":
