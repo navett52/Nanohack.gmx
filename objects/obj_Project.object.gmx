@@ -59,8 +59,10 @@ var interact = keyboard_check(ord("E"));
 
 if(interact)
 {
+    instance_destroy();
     create_text(message, 0.3);
 }
+
 </string>
           </argument>
         </arguments>
