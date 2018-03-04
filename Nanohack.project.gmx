@@ -22,7 +22,6 @@
       <sprite>sprites\spr_Player</sprite>
     </sprites>
     <sprites name="Level">
-<<<<<<< HEAD
       <sprite>sprites\spr_Solid</sprite>
       <sprites name="Walls">
         <sprite>sprites\spr_WallTNeg</sprite>
@@ -44,9 +43,6 @@
         <sprite>sprites\spr_GlassNormal</sprite>
         <sprite>sprites\spr_GlassSide</sprite>
       </sprites>
-=======
-      <sprite>sprites\spr_temp_solid</sprite>
->>>>>>> Dev
     </sprites>
     <sprite>sprites\spr_Floor</sprite>
     <sprite>sprites\spr_nanoBots</sprite>
@@ -122,14 +118,9 @@
     </objects>
   </objects>
   <rooms name="rooms">
-<<<<<<< HEAD
-    <room>rooms\rm_RoomEvan</room>
-    <room>rooms\rm_RoomJake</room>
-=======
     <room>rooms\rm_RoomJake</room>
     <room>rooms\rm_RoomEvan</room>
     <room>rooms\rm_6th_floor</room>
->>>>>>> Dev
     <room>rooms\Justin_Dev_Room</room>
     <room>rooms\rm_TestConnor</room>
   </rooms>
