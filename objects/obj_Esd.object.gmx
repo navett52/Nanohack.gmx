@@ -74,6 +74,8 @@ with (obj_nanoBots) {
 // delete any objects that collided with the esd
 for (var i = 0; i &lt; array_length_1d(collisionObjects); i++) {
     instance_destroy(collisionObjects[i]);
+    audio_stop_sound(snd_Buzz);
+    audio_play_sound(snd_Dead, 5, false);
 }
 
 

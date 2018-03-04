@@ -404,6 +404,7 @@
     <instance objName="obj_StatusBars" x="1504" y="1600" name="inst_F1E08F6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Snack" x="1280" y="1472" name="inst_609E694B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Civ" x="1312" y="1408" name="inst_0FB5EE78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ESDGun" x="1408" y="1312" name="inst_C46A3576" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
