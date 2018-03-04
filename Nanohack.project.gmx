@@ -4,7 +4,17 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="BackgroundMusic">
+      <sound>sound\snd_Ominous</sound>
+      <sound>sound\snd_ZappinTime</sound>
+    </sounds>
+    <sounds name="SFX">
+      <sound>sound\snd_Zap</sound>
+      <sound>sound\snd_Footstep</sound>
+      <sound>sound\snd_Hurt</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Player">
       <sprite>sprites\spr_Player</sprite>
@@ -12,10 +22,33 @@
     </sprites>
     <sprites name="Level">
       <sprite>sprites\spr_Solid</sprite>
+<<<<<<< HEAD
       <sprite>sprites\spr_Snack</sprite>
       <sprite>sprites\spr_Civ</sprite>
       <sprite>sprites\spr_Floor</sprite>
       <sprite>sprites\spr_Project</sprite>
+=======
+      <sprites name="Walls">
+        <sprite>sprites\spr_WallTNeg</sprite>
+        <sprite>sprites\spr_WallTRight</sprite>
+        <sprite>sprites\spr_WallCornerTopLeft</sprite>
+        <sprite>sprites\spr_WallCornerBottomLeft</sprite>
+        <sprite>sprites\spr_WallCornerBottomRight</sprite>
+        <sprite>sprites\spr_WallCornerTopRight</sprite>
+        <sprite>sprites\spr_WallEndBottom</sprite>
+        <sprite>sprites\spr_WallEndLeft</sprite>
+        <sprite>sprites\spr_WallEndRight</sprite>
+        <sprite>sprites\spr_WallEndTop</sprite>
+        <sprite>sprites\spr_WallNormal</sprite>
+        <sprite>sprites\spr_WallPillar</sprite>
+        <sprite>sprites\spr_WallPlus</sprite>
+        <sprite>sprites\spr_WallSide</sprite>
+        <sprite>sprites\spr_WallT</sprite>
+        <sprite>sprites\spr_WallTLeft</sprite>
+        <sprite>sprites\spr_GlassNormal</sprite>
+        <sprite>sprites\spr_GlassSide</sprite>
+      </sprites>
+>>>>>>> Dev
     </sprites>
     <sprite>sprites\spr_nanoBots</sprite>
     <sprites name="jm_enemy">
@@ -24,6 +57,7 @@
     <sprites name="Projectiles">
       <sprite>sprites\spr_Esd</sprite>
     </sprites>
+    <sprite>sprites\sprite41</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -54,9 +88,33 @@
     </objects>
     <objects name="Level">
       <object>objects\obj_Solid</object>
+      <object>objects\obj_Wall</object>
       <object>objects\obj_Floor</object>
+<<<<<<< HEAD
       <object>objects\obj_textBox</object>
       <object>objects\obj_Project</object>
+=======
+      <objects name="Walls">
+        <object>objects\obj_WallTNeg</object>
+        <object>objects\obj_WallTRight</object>
+        <object>objects\obj_WallCornerTopLeft</object>
+        <object>objects\obj_WallCornerBottomLeft</object>
+        <object>objects\obj_WallCornerBottomRight</object>
+        <object>objects\obj_WallCornerTopRight</object>
+        <object>objects\obj_WallEndBottom</object>
+        <object>objects\obj_WallEndLeft</object>
+        <object>objects\obj_WalllEndRight</object>
+        <object>objects\obj_WallEndTop</object>
+        <object>objects\obj_WallNormal</object>
+        <object>objects\obj_WallPillar</object>
+        <object>objects\obj_WallPlus</object>
+        <object>objects\obj_WallSide</object>
+        <object>objects\obj_WallT</object>
+        <object>objects\obj_WallTLeft</object>
+        <object>objects\obj_GlassNormal</object>
+        <object>objects\obj_GlassSide</object>
+      </objects>
+>>>>>>> Dev
     </objects>
     <objects name="Player">
       <object>objects\obj_Player</object>
@@ -73,10 +131,15 @@
     </objects>
   </objects>
   <rooms name="rooms">
+<<<<<<< HEAD
     <room>rooms\rm_RoomEvan</room>
+=======
+    <room>rooms\rm_RoomJake</room>
+    <room>rooms\rm_RoomEvan</room>
+    <room>rooms\rm_6th_floor</room>
+>>>>>>> Dev
     <room>rooms\Justin_Dev_Room</room>
     <room>rooms\rm_TestConnor</room>
-    <room>rooms\rm_RoomJake</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
