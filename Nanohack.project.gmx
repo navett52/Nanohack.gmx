@@ -151,8 +151,8 @@
     <object>objects\obj_nanoBots</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_RoomJake</room>
     <room>rooms\rm_8th_floor</room>
+    <room>rooms\rm_RoomJake</room>
     <room>rooms\rm_RoomEvan</room>
     <room>rooms\Justin_Dev_Room</room>
     <room>rooms\rm_TestConnor</room>
