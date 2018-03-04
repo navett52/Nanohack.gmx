@@ -6,12 +6,15 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\spr_Snack</sprite>
+    <sprite>sprites\spr_Civ</sprite>
     <sprites name="Player">
       <sprite>sprites\spr_Player</sprite>
     </sprites>
     <sprites name="Level">
       <sprite>sprites\spr_Solid</sprite>
     </sprites>
+    <sprite>sprites\spr_Floor</sprite>
     <sprite>sprites\spr_nanoBots</sprite>
     <sprites name="jm_enemy">
       <sprite>sprites\jm_enemy</sprite>
@@ -38,6 +41,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_TextBox</font>
+    <font>fonts\fnt_CivCount</font>
   </fonts>
   <objects name="objects">
     <objects name="Projectiles">
@@ -46,10 +50,16 @@
     <object>objects\obj_textBox</object>
     <objects name="Level">
       <object>objects\obj_Solid</object>
+      <object>objects\obj_Floor</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_Player</object>
       <object>objects\obj_StatusBars</object>
+      <object>objects\obj_PlayerStats</object>
+    </objects>
+    <objects name="Collectables">
+      <object>objects\obj_Snack</object>
+      <object>objects\obj_Civ</object>
     </objects>
     <object>objects\obj_nanoBots</object>
     <objects name="jm_enemy">
