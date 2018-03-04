@@ -12,16 +12,13 @@
     <sprites name="Level">
       <sprite>sprites\spr_Solid</sprite>
     </sprites>
-<<<<<<< HEAD
     <sprite>sprites\spr_nanoBots</sprite>
-=======
     <sprites name="jm_enemy">
       <sprite>sprites\jm_enemy</sprite>
     </sprites>
     <sprites name="Projectiles">
       <sprite>sprites\spr_Esd</sprite>
     </sprites>
->>>>>>> Dev
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -53,13 +50,10 @@
       <object>objects\obj_Player</object>
       <object>objects\obj_StatusBars</object>
     </objects>
-<<<<<<< HEAD
     <object>objects\obj_nanoBots</object>
-=======
     <objects name="jm_enemy">
       <object>objects\obj_jm_enemy</object>
     </objects>
->>>>>>> Dev
   </objects>
   <rooms name="rooms">
     <room>rooms\Justin_Dev_Room</room>
