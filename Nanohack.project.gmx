@@ -25,6 +25,7 @@
     <sprite>sprites\spr_temp_Vent</sprite>
     <sprite>sprites\spr_temp_Wires</sprite>
     <sprite>sprites\spr_Temp_Desk</sprite>
+    <sprite>sprites\spr_Chair_Temp</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -57,6 +58,7 @@
       <object>objects\obj_Vent</object>
       <object>objects\obj_Wires</object>
       <object>objects\obj_Desk</object>
+      <object>objects\obj_Chair</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_Player</object>

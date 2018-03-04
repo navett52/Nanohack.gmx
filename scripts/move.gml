@@ -1,23 +1,32 @@
 //move the player
 
-var collisionObject = argument0;
-
-if(place_meeting(x + hspd, y, collisionObject))
+for (var i = 0; i < argument_count; i++) 
 {
-    while(!place_meeting(x+sign(hspd), y, collisionObject))
+    collisionObjects[i] = argument[i];
+}
+
+for (var i = 0; i < argument_count; i++) 
+{
+    if (place_meeting(x + hspd, y, collisionObjects[i]))
     {
-        x += sign(hspd);
+        while(!place_meeting(x+sign(hspd), y, collisionObjects[i]))
+        {
+            x += sign(hspd);
+        }
+        hspd = 0;
     }
-    hspd = 0;
 }
 x += hspd;
 
-if(place_meeting(x, y + vspd, collisionObject))
+for (var i = 0; i < argument_count; i++)
 {
-    while(!place_meeting(x, y+sign(vspd), collisionObject))
+    if (place_meeting(x, y + vspd, collisionObjects[i]))
     {
-        y += sign(vspd);
-    }
-    vspd = 0;
+        while(!place_meeting(x, y+sign(vspd), collisionObjects[i]))
+        {
+            y += sign(vspd);
+        }
+        vspd = 0;
+    }   
 }
 y += vspd;
