@@ -8,6 +8,71 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Create for the gun    
+
+grow = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Makes the gun Grow and shrink
+
+if (grow == true){
+image_xscale += .01;
+image_yscale += .01;
+    if(image_xscale &gt;= 1.5){
+    grow = false;
+    }
+}
+
+if (grow == false){
+image_xscale -= .01;
+image_yscale -= .01;
+    if(image_xscale &lt;= 1){
+    grow = true;
+    }
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_Player">
       <action>
         <libid>1</libid>
@@ -26,6 +91,7 @@
           <argument>
             <kind>1</kind>
             <string>obj_PlayerStats.hasESD = true;
+obj_Player.sprite_index = spr_PlayerWithGun;
 
 audio_stop_all();
 audio_emitter_gain(obj_PlayerStats.audio_em, 0.4);
