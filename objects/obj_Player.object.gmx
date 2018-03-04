@@ -110,6 +110,8 @@ if (sprite_index != spr_PlayerHurt)
     if (obj_PlayerStats.playerHealth == obj_PlayerStats.playerHealthMin)
     {
         room_goto(rm_gameOver);
+        obj_PlayerStats.playerHealth = obj_PlayerStats.playerHealthMax;
+        obj_PlayerStats.hasESD = false;
     }
     sprite_index = spr_PlayerHurt;
     image_speed = .165;
