@@ -13,6 +13,7 @@
     <sprites name="Level">
       <sprite>sprites\spr_Solid</sprite>
     </sprites>
+    <sprite>sprites\spr_nanoBots</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -23,6 +24,9 @@
     </scripts>
     <scripts name="helper">
       <script>scripts\move.gml</script>
+    </scripts>
+    <scripts name="nanobots">
+      <script>scripts\roam_state.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -40,6 +44,7 @@
       <object>objects\obj_Player</object>
       <object>objects\obj_StatusBars</object>
     </objects>
+    <object>objects\obj_nanoBots</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_RoomEvan</room>
