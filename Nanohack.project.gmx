@@ -13,12 +13,15 @@
       <sound>sound\snd_Zap</sound>
       <sound>sound\snd_Footstep</sound>
       <sound>sound\snd_Hurt</sound>
+      <sound>sound\snd_Buzz</sound>
+      <sound>sound\snd_Dead</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Player">
       <sprite>sprites\spr_Player</sprite>
       <sprite>sprites\spr_PlayerHurt</sprite>
+      <sprite>sprites\spr_ESDGun</sprite>
     </sprites>
     <sprites name="Level">
       <sprite>sprites\spr_Solid</sprite>
@@ -127,6 +130,7 @@
     <objects name="Collectables">
       <object>objects\obj_Snack</object>
       <object>objects\obj_Civ</object>
+      <object>objects\obj_ESDGun</object>
     </objects>
     <object>objects\obj_nanoBots</object>
     <objects name="jm_enemy">
