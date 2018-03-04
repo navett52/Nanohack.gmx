@@ -6,15 +6,17 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_Snack</sprite>
-    <sprite>sprites\spr_Civ</sprite>
     <sprites name="Player">
       <sprite>sprites\spr_Player</sprite>
+      <sprite>sprites\spr_PlayerHurt</sprite>
     </sprites>
     <sprites name="Level">
       <sprite>sprites\spr_Solid</sprite>
+      <sprite>sprites\spr_Snack</sprite>
+      <sprite>sprites\spr_Civ</sprite>
+      <sprite>sprites\spr_Floor</sprite>
+      <sprite>sprites\spr_Project</sprite>
     </sprites>
-    <sprite>sprites\spr_Floor</sprite>
     <sprite>sprites\spr_nanoBots</sprite>
     <sprites name="jm_enemy">
       <sprite>sprites\jm_enemy</sprite>
@@ -33,10 +35,13 @@
     <scripts name="helper">
       <script>scripts\move.gml</script>
       <script>scripts\attach_object.gml</script>
+      <script>scripts\target_right.gml</script>
+      <script>scripts\target_above.gml</script>
     </scripts>
     <scripts name="nanobots">
       <script>scripts\roam_state.gml</script>
       <script>scripts\chase_state.gml</script>
+      <script>scripts\replicate_state.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -47,10 +52,11 @@
     <objects name="Projectiles">
       <object>objects\obj_Esd</object>
     </objects>
-    <object>objects\obj_textBox</object>
     <objects name="Level">
       <object>objects\obj_Solid</object>
       <object>objects\obj_Floor</object>
+      <object>objects\obj_textBox</object>
+      <object>objects\obj_Project</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_Player</object>
