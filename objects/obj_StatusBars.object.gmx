@@ -35,8 +35,6 @@ if (obj_PlayerStats.hasESD)
 {
     draw_healthbar(view_xview[0] + 20, view_yview[0] + 67, view_xview[0] + 500, view_yview[0] + 60, pEnergy, c_dkgray, c_blue, c_blue, 0, true, true);
 }
-var pEnergy = (obj_PlayerStats.playerEnergy/ obj_PlayerStats.playerEnergyMax) * 100; 
-draw_healthbar(view_xview[1] + 20, view_yview[1] + 67, view_xview[1] + 500, view_yview[1] + 60, pEnergy, c_dkgray, c_blue, c_blue, 0, true, true);
 
 score = instance_number(obj_Civ);
 
