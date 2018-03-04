@@ -4053,6 +4053,7 @@
     <instance objName="obj_Chair" x="4096" y="2656" name="inst_E3748854" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="-32"/>
     <instance objName="obj_Chair" x="4160" y="2656" name="inst_39B50792" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_Chair" x="4102" y="2590" name="inst_F1742673" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="-161"/>
+    <instance objName="obj_Floor2" x="3040" y="3616" name="inst_BD350F22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
