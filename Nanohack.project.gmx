@@ -4,7 +4,17 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="BackgroundMusic">
+      <sound>sound\snd_Ominous</sound>
+      <sound>sound\snd_ZappinTime</sound>
+    </sounds>
+    <sounds name="SFX">
+      <sound>sound\snd_Zap</sound>
+      <sound>sound\snd_Footstep</sound>
+      <sound>sound\snd_Hurt</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_Snack</sprite>
     <sprite>sprites\spr_Civ</sprite>
