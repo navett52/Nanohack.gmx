@@ -29,6 +29,7 @@
 spd = 6;
 hspd = 0;
 vspd = 0;
+grow = true;
 
 state = player_move_state;
 
@@ -57,12 +58,85 @@ state = player_move_state;
             <string>///execute state
 
 script_execute(state);
+
+if(audio_is_playing(snd_Buzz))
+{
+    if(distance_to_object(obj_nanoBots) &gt;= 400)
+    {
+        audio_stop_sound(snd_Buzz);
+    }
+}
+
+if (grow == true){
+image_xscale += .008;
+image_yscale += .008;
+    if(image_xscale &gt;= 1.1){
+    grow = false;
+    }
+}
+
+if (grow == false){
+image_xscale -= .008;
+image_yscale -= .008;
+    if(image_xscale &lt;= 1){
+    grow = true;
+    }
+}
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="50">
+    <event eventtype="4" ename="obj_nanoBots">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Damage the player when they get touched by nanobots
+if (sprite_index != spr_PlayerHurt)
+{
+    sprite_index = spr_PlayerHurt;
+    image_speed = .165;
+    obj_PlayerStats.playerHealth -= 10;
+    audio_play_sound(snd_Hurt, 5, false);
+    if (target_right(other))
+    {
+        hspd = -30;
+    }
+    else
+    {
+        hspd = 30;
+    }
+    
+    if (target_above(other))
+    {
+        vspd = -30;
+    }
+    else
+    {
+        vspd = 30;
+    }
+    move(obj_Solid, obj_Desk);
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="53">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -80,7 +154,45 @@ script_execute(state);
           <argument>
             <kind>1</kind>
             <string>/// Fire Projectile
-instance_create(x + lengthdir_x(32, image_angle), y + lengthdir_y(32, image_angle), obj_Esd);
+
+if (obj_PlayerStats.playerEnergy &gt;= 50 &amp;&amp; obj_PlayerStats.hasESD) {
+    with (instance_create(x,y, obj_Esd)) {
+        image_angle = other.direction;
+        attached = other.id;
+        offsetDir = x - other.x;
+        offsetDist = y - other.y;
+        initialAngle = 0;
+        obj_PlayerStats.playerEnergy -= energyCost;
+    }  
+    audio_sound_gain(audio_play_sound(snd_Zap, 5, false), 0.7, 0);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Get the player out of hurt animation
+if (sprite_index = spr_PlayerHurt)
+{
+    sprite_index = spr_Player;
+}
 </string>
           </argument>
         </arguments>
