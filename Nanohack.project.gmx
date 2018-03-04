@@ -117,9 +117,7 @@
         <object>objects\obj_GlassNormal</object>
         <object>objects\obj_GlassSide</object>
       </objects>
-<<<<<<< HEAD
       <object>objects\obj_Floor2</object>
-=======
       <objects name="Special Projects">
         <object>objects\obj_VArgh</object>
         <object>objects\obj_Watrr</object>
@@ -138,7 +136,6 @@
         <object>objects\obj_Schwift</object>
         <object>objects\obj_MentalMusic</object>
       </objects>
->>>>>>> Dev
     </objects>
     <objects name="Player">
       <object>objects\obj_Player</object>
