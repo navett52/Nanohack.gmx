@@ -4,7 +4,17 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="BackgroundMusic">
+      <sound>sound\snd_Ominous</sound>
+      <sound>sound\snd_ZappinTime</sound>
+    </sounds>
+    <sounds name="SFX">
+      <sound>sound\snd_Zap</sound>
+      <sound>sound\snd_Footstep</sound>
+      <sound>sound\snd_Hurt</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_Snack</sprite>
     <sprite>sprites\spr_Civ</sprite>
@@ -12,6 +22,7 @@
       <sprite>sprites\spr_Player</sprite>
     </sprites>
     <sprites name="Level">
+<<<<<<< HEAD
       <sprite>sprites\spr_Solid</sprite>
       <sprites name="Walls">
         <sprite>sprites\spr_WallTNeg</sprite>
@@ -33,6 +44,9 @@
         <sprite>sprites\spr_GlassNormal</sprite>
         <sprite>sprites\spr_GlassSide</sprite>
       </sprites>
+=======
+      <sprite>sprites\spr_temp_solid</sprite>
+>>>>>>> Dev
     </sprites>
     <sprite>sprites\spr_Floor</sprite>
     <sprite>sprites\spr_nanoBots</sprite>
@@ -70,6 +84,7 @@
     <object>objects\obj_textBox</object>
     <objects name="Level">
       <object>objects\obj_Solid</object>
+      <object>objects\obj_Wall</object>
       <object>objects\obj_Floor</object>
       <objects name="Walls">
         <object>objects\obj_WallTNeg</object>
@@ -107,8 +122,14 @@
     </objects>
   </objects>
   <rooms name="rooms">
+<<<<<<< HEAD
     <room>rooms\rm_RoomEvan</room>
     <room>rooms\rm_RoomJake</room>
+=======
+    <room>rooms\rm_RoomJake</room>
+    <room>rooms\rm_RoomEvan</room>
+    <room>rooms\rm_6th_floor</room>
+>>>>>>> Dev
     <room>rooms\Justin_Dev_Room</room>
     <room>rooms\rm_TestConnor</room>
   </rooms>
