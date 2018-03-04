@@ -8,12 +8,19 @@
   <sprites name="sprites">
     <sprite>sprites\spr_Snack</sprite>
     <sprite>sprites\spr_Civ</sprite>
-    <sprite>sprites\spr_Esd</sprite>
     <sprites name="Player">
       <sprite>sprites\spr_Player</sprite>
     </sprites>
     <sprites name="Level">
       <sprite>sprites\spr_Solid</sprite>
+    </sprites>
+    <sprite>sprites\spr_Floor</sprite>
+    <sprite>sprites\spr_nanoBots</sprite>
+    <sprites name="jm_enemy">
+      <sprite>sprites\jm_enemy</sprite>
+    </sprites>
+    <sprites name="Projectiles">
+      <sprite>sprites\spr_Esd</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -25,6 +32,10 @@
     </scripts>
     <scripts name="helper">
       <script>scripts\move.gml</script>
+      <script>scripts\attach_object.gml</script>
+    </scripts>
+    <scripts name="nanobots">
+      <script>scripts\roam_state.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -32,30 +43,32 @@
     <font>fonts\fnt_CivCount</font>
   </fonts>
   <objects name="objects">
+    <objects name="Projectiles">
+      <object>objects\obj_Esd</object>
+    </objects>
     <object>objects\obj_textBox</object>
     <objects name="Level">
       <object>objects\obj_Solid</object>
-    </objects>
-    <objects name="projectiles">
-      <object>objects\obj_Esd</object>
+      <object>objects\obj_Floor</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_Player</object>
       <object>objects\obj_StatusBars</object>
-    </objects>
-    <objects name="Player">
       <object>objects\obj_PlayerStats</object>
-      <object>objects\obj_StatusBars</object>
     </objects>
     <objects name="Collectables">
       <object>objects\obj_Snack</object>
       <object>objects\obj_Civ</object>
     </objects>
+    <object>objects\obj_nanoBots</object>
+    <objects name="jm_enemy">
+      <object>objects\obj_jm_enemy</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_TestConnor</room>
     <room>rooms\Justin_Dev_Room</room>
     <room>rooms\rm_RoomEvan</room>
+    <room>rooms\rm_TestConnor</room>
     <room>rooms\rm_RoomJake</room>
   </rooms>
   <help>
