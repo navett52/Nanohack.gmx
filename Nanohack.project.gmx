@@ -121,6 +121,24 @@
         <object>objects\obj_GlassNormal</object>
         <object>objects\obj_GlassSide</object>
       </objects>
+      <objects name="Special Projects">
+        <object>objects\obj_VArgh</object>
+        <object>objects\obj_Watrr</object>
+        <object>objects\obj_GiantJenga</object>
+        <object>objects\obj_RankIt</object>
+        <object>objects\obj_Tweeter</object>
+        <object>objects\obj_UCyberHotspotSniper</object>
+        <object>objects\obj_JazzItUp</object>
+        <object>objects\obj_Smart434</object>
+        <object>objects\obj_TiltVR</object>
+        <object>objects\obj_MemeMe</object>
+        <object>objects\obj_YouSuckAtMusic</object>
+        <object>objects\obj_ProjectPartyUp</object>
+        <object>objects\obj_MemeStockMarket</object>
+        <object>objects\obj_WhatIsTheCurrentYear</object>
+        <object>objects\obj_Schwift</object>
+        <object>objects\obj_MentalMusic</object>
+      </objects>
     </objects>
     <objects name="Player">
       <object>objects\obj_Player</object>
