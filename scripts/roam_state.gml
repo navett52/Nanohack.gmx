@@ -43,6 +43,11 @@ if (place_meeting(x + hspd, y + vspd, obj_Solid))
 hspd = 0;
 vspd = 0;
 
+if (distance_to_object(obj_Player) < range)
+{
+    state = chase_state;
+}
+
 switch (dir)
 {
     case "up":
