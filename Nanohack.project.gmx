@@ -56,9 +56,6 @@
       <sprite>sprites\spr_Floor2</sprite>
     </sprites>
     <sprite>sprites\spr_nanoBots</sprite>
-    <sprites name="jm_enemy">
-      <sprite>sprites\jm_enemy</sprite>
-    </sprites>
     <sprites name="Projectiles">
       <sprite>sprites\spr_Esd</sprite>
     </sprites>
@@ -120,7 +117,28 @@
         <object>objects\obj_GlassNormal</object>
         <object>objects\obj_GlassSide</object>
       </objects>
+<<<<<<< HEAD
       <object>objects\obj_Floor2</object>
+=======
+      <objects name="Special Projects">
+        <object>objects\obj_VArgh</object>
+        <object>objects\obj_Watrr</object>
+        <object>objects\obj_GiantJenga</object>
+        <object>objects\obj_RankIt</object>
+        <object>objects\obj_Tweeter</object>
+        <object>objects\obj_UCyberHotspotSniper</object>
+        <object>objects\obj_JazzItUp</object>
+        <object>objects\obj_Smart434</object>
+        <object>objects\obj_TiltVR</object>
+        <object>objects\obj_MemeMe</object>
+        <object>objects\obj_YouSuckAtMusic</object>
+        <object>objects\obj_ProjectPartyUp</object>
+        <object>objects\obj_MemeStockMarket</object>
+        <object>objects\obj_WhatIsTheCurrentYear</object>
+        <object>objects\obj_Schwift</object>
+        <object>objects\obj_MentalMusic</object>
+      </objects>
+>>>>>>> Dev
     </objects>
     <objects name="Player">
       <object>objects\obj_Player</object>
@@ -133,9 +151,6 @@
       <object>objects\obj_ESDGun</object>
     </objects>
     <object>objects\obj_nanoBots</object>
-    <objects name="jm_enemy">
-      <object>objects\obj_jm_enemy</object>
-    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_8th_floor</room>

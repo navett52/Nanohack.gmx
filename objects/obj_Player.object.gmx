@@ -111,7 +111,7 @@ if (sprite_index != spr_PlayerHurt)
     {
         vspd = 30;
     }
-    move(obj_Solid);
+    move(obj_Solid, obj_Desk);
 }
 
 </string>
@@ -137,10 +137,18 @@ if (sprite_index != spr_PlayerHurt)
           <argument>
             <kind>1</kind>
             <string>/// Fire Projectile
-attach_object(obj_Esd);
 
-audio_sound_gain(audio_play_sound(snd_Zap, 5, false), 0.7, 0);
-    ;
+if (obj_PlayerStats.playerEnergy &gt;= 50 &amp;&amp; obj_PlayerStats.hasESD) {
+    with (instance_create(x,y, obj_Esd)) {
+        image_angle = other.direction;
+        attached = other.id;
+        offsetDir = x - other.x;
+        offsetDist = y - other.y;
+        initialAngle = 0;
+        obj_PlayerStats.playerEnergy -= energyCost;
+    }  
+    audio_sound_gain(audio_play_sound(snd_Zap, 5, false), 0.7, 0);
+}
 </string>
           </argument>
         </arguments>

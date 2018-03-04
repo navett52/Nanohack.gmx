@@ -32,7 +32,7 @@ playerEnergyMax = 100;
 playerHealthMin = 0;
 playerEnergyMin = 0;
 playerHealth = 100;
-playerEnergy = 100;
+playerEnergy = 0;
 civCount = 0;
 hasESD = false;
 
