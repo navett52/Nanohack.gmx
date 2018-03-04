@@ -73,8 +73,6 @@ state = roam_state;
         </arguments>
       </action>
     </event>
-<<<<<<< HEAD
-=======
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -98,7 +96,6 @@ state = roam_state;
         </arguments>
       </action>
     </event>
->>>>>>> Dev
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
