@@ -22,6 +22,9 @@
     <sprites name="Projectiles">
       <sprite>sprites\spr_Esd</sprite>
     </sprites>
+    <sprite>sprites\spr_temp_Vent</sprite>
+    <sprite>sprites\spr_temp_Wires</sprite>
+    <sprite>sprites\spr_Temp_Desk</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -51,6 +54,9 @@
       <object>objects\obj_Solid</object>
       <object>objects\obj_Wall</object>
       <object>objects\obj_Floor</object>
+      <object>objects\obj_Vent</object>
+      <object>objects\obj_Wires</object>
+      <object>objects\obj_Desk</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_Player</object>
@@ -67,9 +73,9 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_RoomJake</room>
+    <room>rooms\rm_8th_floor</room>
     <room>rooms\rm_RoomEvan</room>
-    <room>rooms\rm_6th_floor</room>
+    <room>rooms\rm_RoomJake</room>
     <room>rooms\Justin_Dev_Room</room>
     <room>rooms\rm_TestConnor</room>
   </rooms>
